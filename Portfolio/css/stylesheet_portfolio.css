@@ -1,0 +1,25 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-family: Didot,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+  }
+
+body {
+    background: black;
+    color:aquamarine;
+}
+.button-link
+{
+    border-radius: 10px;
+    border-color: grey;
+    color:white;
+    font-size: 2rem;
+}
+.impressum h1 {
+    font-size:60px;
+}

@@ -1,0 +1,359 @@
+ * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-family: Didot,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+  }
+  body {
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-position-y: -22%;
+    background-position-x: 52.5%;
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+    background-color: black;
+    
+  }
+  
+   h1 {
+    margin-top:66px;
+    text-align: center;
+    font-size: 66px;
+    color: white;
+  }
+  #tuerkis {
+    color:aquamarine;
+  }
+  
+  .Download {
+    display: flex;
+    background-image: url(../Bilder/background.jpg);
+    margin-top:50px;
+    height: 260px;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center; 
+    align-items: center;
+  }
+
+  .Download .btn {
+    width:fit-content;
+    background-color: rgba(91, 91, 91, 0.744);
+    border: none;
+    color: white;
+    padding: 20px 38px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 10px;
+    display: block;
+    
+
+  }
+
+
+  .btn:hover {
+    background-color:rgba(91, 91, 91, 0.452);
+    
+  }
+  
+  nav {
+    margin-bottom: 10px;
+    background-color: rgba(171, 171, 171, 0.116);
+    border-radius: 24px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+
+  }
+  nav ul {
+    padding: 10px 0px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    padding:20px;
+  }
+  nav ul li{
+    
+    list-style-type: none;
+    margin:0px 2px;
+    margin-right: 20px;
+   
+  }
+
+/*nav ul li a:active {
+  background-color: aquamarine; 
+  text-decoration: underline;
+}*/
+
+
+
+  nav a {
+    padding: 18px;
+    background-color:white;
+    border-radius: 20px;
+    border: 1px solid #666;
+    display:block;
+    text-decoration: none;
+    color: #666;
+    white-space: nowrap;
+  }
+  
+  nav li {
+    margin: 0px 20px;
+    list-style-type:none;
+    padding: 5px;
+  }
+  nav a:hover {
+    background-color:rgba(95, 95, 95, 0.604) ;
+    color: white;
+    text-decoration: underline;
+  }
+  /*#aktuell
+  {
+    background-color:aquamarine ;
+  }
+  */
+  nav a:active {
+    background-color: aquamarine;
+    color:#666
+  }
+  hr {
+    border-radius: 45%;
+    border-style: groove;
+    padding:6px;
+    background-color:aquamarine;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  #about_me {
+    color: white;
+    padding-top: 60px;
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+  }
+  #about_me img {
+    width: 300px;
+    height: 445px;
+    margin-left: 300px;
+    margin-top: 150px;
+  }
+  #about_me h1 {
+    font-size: 100px;
+    padding-bottom: 30px;
+  }
+  #about_me a {
+    color: lightblue;
+  
+  }
+  #projekte {
+    padding-bottom:100px;
+  }
+
+  #in_arbeit {
+    color:white;
+    text-align: center;
+  }
+
+  #kontakt li {
+      list-style-image:url(../Bilder/Standort2.png); 
+      padding-bottom:10px;
+      margin-left: 400px;
+      padding-right: 400px;
+      color: white;
+      font-size: 52px;
+      text-align: center;
+
+
+      
+  }
+  #kontakt li:nth-child(2)
+  {
+    list-style-image:url(../Bilder/Telefon2.png);
+
+  }
+  #kontakt li:nth-child(3)
+  {
+    list-style-image:url(../Bilder/Email.png);
+  
+  }
+  #kontakt li:nth-child(4)
+  {
+    list-style-image:url(../Bilder/Impressum.png);
+  }
+  
+  #skills {
+    margin-top: 50px;
+    text-align: center;
+    color:beige;
+    font-size:larger;
+  }
+  
+  .skill {
+    margin-bottom: 10px;
+    position: relative;
+    text-align: right;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    
+  }
+  
+  .bar_1 {
+    position: absolute;
+    width: 50%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: aquamarine;
+    border-radius: 5px;
+    color:rgb(255, 255, 255);
+  }
+  .bar_2 {
+    position: absolute;
+    width: 78%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: aquamarine;
+    border-radius: 5px;
+    color:white;
+  }
+  .bar_3 {
+    position: absolute;
+    width: 89%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: aquamarine;
+    border-radius: 5px;
+    color:white;
+  }
+  .bar_4 {
+    position: absolute;
+    width: 89%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: aquamarine;
+    border-radius: 5px;
+    color:white;
+  }
+  .bar_5 {
+    position: absolute;
+    width: 89%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: aquamarine;
+    border-radius: 5px;
+    color:white;
+  }
+
+  
+  
+
+  /*@media (max-width: 720px)         ALTES MEDIA RESPONSIVE DESIGN
+  {
+    body 
+    {
+      margin: 0px;
+    }
+    nav ul 
+    {
+      flex-direction: column;
+      padding: 5px 0px;
+      
+    }
+    nav a
+    {
+      margin: 2.5px 5px;
+      text-align: center;
+    }
+    nav ul li 
+    {
+      margin-right: 0px;
+    }
+    h1 {
+      font-size: 36px;
+    }
+    #Download li a {
+      margin: 10px auto;
+      width: 150px;
+      font-size: 20px;
+    }
+    #about_me {
+      font-size: 24px;
+    }
+  } */
+
+  @media (min-width: 768px) {
+    body {
+      background-position-y: center;
+      background-position-x: center;
+    }
+  }
+  
+  h1 {
+    margin-top: 66px;
+    text-align: center;
+    font-size: 66px;
+    color: white;
+  }
+
+
+  @media (max-width: 767px) {                   /*NEUES MEDIA RESPONSIVE DESIGN */
+    body {
+        margin: 20px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    nav ul li {
+        margin-right: auto;
+    }
+
+    #Download ul {
+        margin: 80px;
+    }
+
+    #Download li a {
+        margin-top: 50px;
+        padding-left: 22px;
+        padding-right: 22px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        width: 140px;
+        font-size: 20px;
+    }
+
+    #about_me h1 {
+        font-size: 60px;
+    }
+
+    #projekte h1 {
+        font-size: 40px;
+    }
+
+    #kontakt li {
+        margin-left: 100px;
+        padding-right: 100px;
+        font-size: 30px;
+    }
+}
+
+
+
+
+
+
+

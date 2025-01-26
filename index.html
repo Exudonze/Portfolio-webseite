@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylesheet.css"> 
+    <title>Sidney Bayerlein | Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #121212;
+            color: #00ffc3;
+            line-height: 1.6;
+        }
+
+        nav {
+            background: #1f1f1f;
+            padding: 10px 20px;
+            
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: center;
+
+            margin-bottom: 10px;
+           
+            border-radius: 24px;
+            position: sticky;
+            top: 0;
+           
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #00ffc3;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ff8c00;
+        }
+
+        header {
+            text-align: center;
+            padding: 100px 20px 50px;
+            background: linear-gradient(135deg, #1f1f1f, #121212);
+            color: #00ffc3;
+            margin-top: 60px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        header .btn {
+            background-color: #00ffc3;
+            color: #121212;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        header .btn:hover {
+            background-color: #ff8c00;
+        }
+
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        section h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .skills .skill {
+            margin: 10px 0;
+            text-align: left;
+        }
+
+        .skills .skill div {
+            height: 10px;
+            background-color: #00ffc3;
+            border-radius: 5px;
+        }
+
+        footer {
+            padding: 20px;
+            text-align: center;
+            background: #1f1f1f;
+        }
+
+        footer a {
+            color: #00ffc3;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const skills = [
+                { name: 'Team Arbeit', level: 94 },
+                { name: 'C#', level: 88 },
+                { name: 'SQL', level: 85 },
+                { name: 'Betriebsnetzwerke', level: 83 },
+                { name: 'HTML', level: 80 },
+                { name: 'CSS', level: 75 },
+                
+                
+            ];
+
+            const skillsContainer = document.querySelector('.skills');
+
+            skills.forEach(skill => {
+                const skillElement = document.createElement('div');
+                skillElement.classList.add('skill');
+                skillElement.innerHTML = `
+                    <p>${skill.name}</p>
+                    <div style="width: ${skill.level}%; height: 10px; background-color: #00ffc3; border-radius: 5px;"></div>
+                `;
+                skillsContainer.appendChild(skillElement);
+            });
+
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('nav ul li a').forEach(anchor => {
+                anchor.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const targetId = anchor.getAttribute('href').slice(1);
+                    document.getElementById(targetId).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Startseite</a></li>
+            <li><a href="#about">Über mich</a></li>
+            <li><a href="#projects">Projekte</a></li>
+            <li><a href="#Certificates">Projekte</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <header id="home">
+        <h1>&lt;Hallo&gt; Ich bin <span style="color: #ff8c00;">Sidney</span></h1>
+        <p>Informatik-Enthusiast | Multimedia Developer </p>
+        <a href="Resume.pdf" target="_blank" download><button class="btn">Lebenslauf herunterladen</button></a>
+    </header>
+
+    <section id="about">
+        <h1>Über mich</h1>
+        <p>Hallo! Ich heiße Sidney, 19 Jahre alt, und absolviere derzeit eine Ausbildung zum staatlich anerkannten Informatiker Multimedia am b.i.b International College in Paderborn. Ich bin leidenschaftlich begeistert von Technologie und Digitalisierung und arbeite gern an kreativen Projekten.</p>
+        <a href="https://www.bib.de/" target="_blank">Mehr über das b.i.b erfahren</a>
+    </section>
+
+    <section id="projects">
+        <h1>Projekte</h1>
+        <p>Hier werden bald meine spannendsten Projekte vorgestellt. Bleib dran!</p>
+
+        <div class="skills">
+            <h2>Skills</h2>
+        </div>
+    </section>
+
+    <section id="Certificates">
+        <h1>Zertifikate</h1>
+        <p>Hier werden bald meine Zertifikate vorgestellt. Bleib dran!</p>
+
+    <section id="contact">
+        <h1>Kontakt</h1>
+        <ul>
+            <li>Paderborn, Deutschland</li>
+            <li>+49 163 8658485</li>
+            <li><a href="mailto:Sidney_karl.Bayerlein@edu.bib.de">Sidney_karl.Bayerlein@edu.bib.de</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Sidney Bayerlein. Alle Rechte vorbehalten. <a href="impressum.html">Impressum</a></p>
+    </footer>
+</body>
+</html>
